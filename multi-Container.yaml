@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: web-pod 
+  namespace: prod-ns 
+spec:
+  containers:
+    - name: web-container 
+      image: muralisocial123/test-web-oracle-example:1.0
+      ports:
+        - containerPort: 80 
+    - name: trans-container 
+      image: muralisocial123/bank-app-transcation:latest
+      ports: 
+        - containerPort: 3000
+    
