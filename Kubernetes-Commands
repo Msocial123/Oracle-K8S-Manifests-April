@@ -44,3 +44,61 @@
    53  kubectl get pods -o wide -n prod-ns
    54  kubectl exec -it web-pod -c trans-container -n prod-ns -- /bin/sh 
    55  kubectl exec -it web-pod -c web-container -n prod-ns -- /bin/sh 
+  785  cat murali-deployment.yaml 
+  786  kubectl delete pod web-pod -n amit-kaushik
+  787  kubectl get nodes -n amit-kaushik
+  788  kubectl describe pod web-pod -n amit-kaushik
+  789  kubectl delete web-pod
+  790  kubectl get pods -o wide -n amit-kaushik
+  791  kubectl get all -n ketaki
+  792  vi deployment.yaml 
+  793  kubectl apply -f deployment.yaml
+  794  kubectl rollout restart deploymkubectl rollout restart deployment ks-deploy -n ketaki
+  795  ls
+  796  kubectl rollout restart deployment ks-deploy -n ketaki
+  797  vi murali-deployment.yaml 
+  798  kubectl get all -n ketaki
+  799  cp murali-deployment.yaml ../anshul/.
+  800  cd ../anshul/
+  801  #kubectl get deployment  -n amit-kaushik
+  802  mv murali-deployment.yaml anshul-deployment.yaml
+  803  git status
+  804  kubectl apply -f anshul-deployment.yaml 
+  805  vi deployment.yaml 
+  806  kubectl get pods -n anshul
+  807  git add .
+  808  vi anshul-deployment.yaml 
+  809  git status
+  810  ls
+  811  clear
+  812  ll
+  813  rm murali-deployment.yaml 
+  814  kubectl get deployment web -n amit-kaushik
+  815  git commit -m "added deployment yaml file"
+  816  vi deployment.yaml
+  817  kubectl get all -n amit-kaushik
+  818  kubectl apply -f deployment.yaml 
+  819  git config --global user.email "muralisocial123@gmail.com"
+  820  kubectl get pods
+  821  kubectl get deployment amit-deploy  -n amit-kaushik
+  822  kubectl get pods -n ns-akaulgud
+  823  git config --global user.name "Msocial123"
+  824  git commit -m "added deployment yaml file"
+  825  kubectl get pods -n anshul
+  826  vi pooja-deployment.yml
+  827  vi deployment.yaml 
+  828  kubectl apply -f pooja-deployment.yml 
+  829  kubectl get deployments
+  830  vi deployment.yaml 
+  831  kubectl get deployments -n anshul
+  832  kubectl apply -f deployment.yaml
+  833  kubectl get deployments -n pooja
+  834  git push origin master
+  835  kubectl get deployment amit-deploy  -n amit-kaushik
+  836  kubectl get all -n amit-kaushik
+  837  kubectl get pods -n pooja
+  838  kubectl get pods -n anshul
+  839  vi deployment.yaml 
+  840  histroy
+  841  ls
+  842  history
