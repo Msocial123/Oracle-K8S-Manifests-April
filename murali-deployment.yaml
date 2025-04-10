@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: murali-deploy
+  namespace: prod-ns
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: c-1
+          image: daviddocker526/ipl:latest
+          ports:
+            - containerPort: 3000
