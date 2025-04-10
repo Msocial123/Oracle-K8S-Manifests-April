@@ -102,3 +102,23 @@
   840  histroy
   841  ls
   842  history
+_____________________________________
+
+84  kubectl apply -f Deployment.yaml
+   85  kubectl create ns prod-ns
+   86  kubectl apply -f Deployment.yaml
+   87  kubectl get deployments -n prod-ns
+   88  kubectl get deployments -o wide -n prod-ns
+   89  kubectl get rs -n prod-ns
+   90  kubectl get pods -n prod-ns
+   91  kubectl set image deployment/cart-page-rs cart-container=muralisocial123/test-web-oracle-example:1.0
+   92  kubectl set image deployment/cart-page-rs cart-container=muralisocial123/test-web-oracle-example:1.0 -n prod-ns
+   93  kubectl get pods -o wide -n prod-ns
+   94  kubectl get deployments -o wide -n prod-ns
+   95  kubectl rollout status deployment/cart-page-rs -n prod-ns
+   96  kubectl rollout histroy deployment/cart-page-rs -n prod-ns
+   97  kubectl rollout history deployment/cart-page-rs -n prod-ns
+   98  kubectl rollout history deployment/cart-page-rs -n prod-ns --revision=1
+   99  kubectl rollout history deployment/cart-page-rs -n prod-ns --revision=2
+  100  kubectl rollout undo deployment/cart-page-rs -n prod-ns
+  101  kubectl get deployments -o wide -n prod-ns
