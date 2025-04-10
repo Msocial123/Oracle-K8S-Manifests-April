@@ -1,0 +1,40 @@
+    2  kubectl get componentstatuses 
+    3  kubectl get nodes
+    4  kubectl get all -n kube-system
+    5  cd kubectl get componentstatuses 
+    6  cd /home/thakurvire/.kube
+    7  ls
+    8  vi config 
+    9  oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.ap-hyderabad-1.aaaaaaaafaqvc4aeqv5yzeewgnspcihcuyz6sprg7x4dfighpc4hpykk7i4q --file $HOME/.kube/config --region ap-hyderabad-1 --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
+   10  kubectl get nodes
+   11  kubectl get ns
+   12  kubectl create ns test-ns 
+   13  kubectl get ns
+   14  kubectl explain ns 
+   15  kubectl api-versions
+   16  git clone https://github.com/Msocial123/Oracle-K8S-Manifests-April.git
+   17  ls
+   18  cd Oracle-K8S-Manifests-April/
+   19  ls
+   20  kubectl apply -f ns.yaml
+   21  kubectl get ns
+   22  kubectl create ns muali 
+   23  kubectl create ns murali 
+   24  kubectl create ns Mohan -o yaml
+   25  kubectl create ns mohan -o yaml
+   26  kubectl get ns
+   27  git pull
+   28  ls
+   29  cd Oracle-K8S-Manifests-April/
+   30  git pull
+   31  ls
+   32  kubectl apply -f pod.yaml
+   33  kubectl get pods
+   34  kubectl get pods -n prod-ns 
+   35  kubectl describe pod cart-pod
+   36  kubectl describe pod cart-pod -n cart-pod
+   37  kubectl describe pod cart-pod -n prod-ns
+   38  kubectl get pods -n prod-ns
+   39  kubectl get pods -o wide
+   40  kubectl get pods -o wide -n prod-ns
+   41  kubectl exec -it cart-pod -n prod-ns -- /bin/sh 
