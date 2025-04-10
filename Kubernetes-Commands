@@ -38,3 +38,9 @@
    39  kubectl get pods -o wide
    40  kubectl get pods -o wide -n prod-ns
    41  kubectl exec -it cart-pod -n prod-ns -- /bin/sh 
+    50  kubectl apply -f multi-Container.yaml
+   51  kubectl get pods -n prod-ns
+   52  kubectl describe pod web-pod -n prod-ns
+   53  kubectl get pods -o wide -n prod-ns
+   54  kubectl exec -it web-pod -c trans-container -n prod-ns -- /bin/sh 
+   55  kubectl exec -it web-pod -c web-container -n prod-ns -- /bin/sh 
