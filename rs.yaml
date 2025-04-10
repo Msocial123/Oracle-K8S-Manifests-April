@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet 
 metadata: 
   name: cart-page-rs 
-  namespace: prod-ns 
+  namespace: prod-ns
 spec: # Defines behaviour of the ReplicaSet 
   replicas: 3
   selector:
