@@ -1,0 +1,21 @@
+apiVersion: apps/v1 
+kind: ReplicaSet 
+metadata: 
+  name: cart-page-rs 
+  namespace: prod-ns 
+spec: # Defines behaviour of the ReplicaSet 
+  replicas: 3
+  selector:
+    matchLabels:
+      web: app 
+  template: 
+    metadata:
+      labels:
+        web: app 
+    spec: # Define the behaviour of the Pod 
+      containers:
+        - name: cart-container 
+          image: muralisocial123/cart-page-example:1.0
+          ports:
+            - containerPort: 3000
+          
