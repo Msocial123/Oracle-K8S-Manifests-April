@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: cart-pod 
+spec: 
+  containers:
+    - name: cart-cont 
+      image: muralisocial123/cart-page-example:1.0
+      ports: 
+        - containerPort: 3000  
+
