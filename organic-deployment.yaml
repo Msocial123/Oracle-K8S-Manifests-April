@@ -1,0 +1,35 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: organic-deployment
+  namespace: prod-ns 
+spec: # Defines behaviour of the ReplicaSet 
+  replicas: 1
+  selector:
+    matchLabels:
+      web: organic
+  template:  # blue print of the pod 
+    metadata:
+      labels:
+        web: organic
+    spec: # Define the behaviour of the Pod 
+      containers:
+        - name: organic-container 
+          image: muralisocial123/organic-app-web:latest
+          ports:
+            - containerPort: 5656
+--- 
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: organic-svc
+  namespace: prod-ns  
+spec: 
+  selector:
+    web: organic
+  ports:
+    - port: 5657 # Service Port Number
+      targetPort: 5656  # Where Actually application is running 
+      protocol: TCP 
+  type: ClusterIP               
+          
