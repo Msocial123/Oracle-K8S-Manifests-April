@@ -29,5 +29,5 @@ spec:
     - port: 5657 # Service Port Number
       targetPort: 5656  # Where Actually application is running 
       protocol: TCP 
-  type: ClusterIP               
+  type: LoadBalancer         
           
