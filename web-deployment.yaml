@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment 
 metadata: 
   name: web-test-deployment
-  namespace: prod-ns 
 spec: # Defines behaviour of the ReplicaSet 
   replicas: 1
   selector:
