@@ -182,3 +182,11 @@ ______________________________________
   173  kubectl get svc
   174  kubectl get ingress
   175  history
+_______________________________________ 
+  191  kubectl apply -f web-deployment.yaml
+  192  kubectl get deployments -n prod-ns
+  193  kubectl svc deployments -n prod-ns
+  194  kubectl get svc -n prod-ns
+  195  kubectl get nodes -o wide
+  196  kubectl get pods -o wide -n prod-ns
+  197  kubectl get svc -o wide -n prod-ns  
