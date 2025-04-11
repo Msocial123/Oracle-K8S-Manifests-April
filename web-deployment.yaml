@@ -29,5 +29,5 @@ spec:
     - port: 81 # Service Port Number
       targetPort: 80  # Where Actually application is running 
       protocol: TCP 
-  type: ClusterIP               
+  type: NodePort               
           
