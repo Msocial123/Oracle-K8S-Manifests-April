@@ -122,3 +122,63 @@ _____________________________________
    99  kubectl rollout history deployment/cart-page-rs -n prod-ns --revision=2
   100  kubectl rollout undo deployment/cart-page-rs -n prod-ns
   101  kubectl get deployments -o wide -n prod-ns
+
+______________________________________
+
+  119  kubectl describe svc cart-svc -n prod-ns
+  120  git pull
+  121  kubectl apply -f organic-deployment.yaml
+  122  kubectl get deployments -n prod-ns
+  123  kubectl get pods -n prod-ns
+  124  kubectl get svc -n prod-ns
+  125  git pull
+  126  kubectl apply -f web-deployment.yaml
+  127  kubectl get pods -n prod-ns
+  128  kubectl get deployments -n prod-ns
+  129  kubectl get rs -n prod-ns
+  130  kubectl get pods -n prod-ns
+  131  kubectl exec -it web-test-deployment-55484565f-vkm4w -- /bin/sh
+  132  kubectl get pods -o wide  -n prod-ns
+  133  kubectl exec -it web-test-deployment-55484565f-vkm4w -n test-ns -- /bin/sh
+  134  kubectl exec -it web-test-deployment-55484565f-vkm4w -n prod-ns -- /bin/sh
+  135  clear
+  136  kubectl get svc -n prod-ns
+  137  https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
+  138  kubectl apply 0f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
+  139  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
+  140  kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
+  141  kubectl  apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yamlml -n prod-ns
+  142  clear
+  143  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml -n prod-ns
+  144  clear
+  145  kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml -n prod-ns 
+  146  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml  
+  147  kubectl get ingress
+  148  kubectl get all -n ingress-nginx
+  149  git pull
+  150  kubectl apply -f ingress.yaml
+  151  ls
+  152  cd Oracle-K8S-Manifests-April/
+  153  git pull
+  154  kubectl apply -f ingress.yaml
+  155  git pull
+  156  clear
+  157  kubectl apply -f ingress.yaml
+  158  kubectl get ingress
+  159  kubectl get ns
+  160  kubectl get deployments -n prod-ns
+  161  kubectl get svc -n prod-ns
+  162  git pull
+  163  kubectl apply -f Deployment.yaml
+  164  kubectl apply -f organic-deployment.yaml
+  165  kubectl apply -f web-deployment.yaml
+  166  kubectl get svc 
+  167  kubectl get svc
+  168  kubectl get deployments
+  169  git pull
+  170  kubectl apply -f Deployment.yaml
+  171  kubectl apply -f web-deployment.yaml
+  172  kubectl apply -f organic-deployment.yaml
+  173  kubectl get svc
+  174  kubectl get ingress
+  175  history
