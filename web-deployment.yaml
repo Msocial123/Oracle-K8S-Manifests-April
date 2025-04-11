@@ -21,8 +21,7 @@ spec: # Defines behaviour of the ReplicaSet
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: test-svc
-  namespace: prod-ns  
+  name: test-svc 
 spec: 
   selector:
     web: test 

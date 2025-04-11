@@ -21,8 +21,7 @@ spec: # Defines behaviour of the ReplicaSet
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: organic-svc
-  namespace: prod-ns  
+  name: organic-svc 
 spec: 
   selector:
     web: organic
