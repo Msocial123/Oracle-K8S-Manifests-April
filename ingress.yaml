@@ -10,32 +10,33 @@ spec:
   ingressClassName: nginx 
   rules:
     - http:
-      paths:
-      - pathType: Prefix
-        path: /cart(/|$)(.*)
-        backend:
+        paths:
+        - pathType: Prefix
+          path: /cart(/|$)(.*)
+          backend:
           service:
             name: cart-svc
             port: 
               number: 3001
-      - pathType: Prefix
-        path: /organic(/|$)(.*)
-        backend:
+        - pathType: Prefix
+          path: /organic(/|$)(.*)
+          backend:
           service:
             name: organic-svc
             port: 
               number: 5657 
-      - pathType: Prefix
-        path: /test(/|$)(.*)
-        backend:
+        - pathType: Prefix
+          path: /test(/|$)(.*)
+          backend:
           service:
             name: test-svc
             port: 
               number: 81   
-      - pathType: Prefix
-        path: /(.*)
-        backend:
-          service:
-            name: test-svc
+        - pathType: Prefix
+          path: /(.*)
+          backend:
+            service:
+              name: test-svc
             port: 
-              number: 81                   
+              number: 81  
+                       
